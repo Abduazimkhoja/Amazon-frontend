@@ -13,9 +13,7 @@ interface ICatalog {
 
 const Catalog: FC<ICatalog> = ({ products, isLoading, title }) => {
 	if (isLoading) return <Loader />
-  alert(
-		'The backend will start within 2 minutes. The hosting resumed backend operation.'
-	)
+  
 	return (
 		<section>
 			{title && <Heading className='mb-5'>{title}</Heading>}
